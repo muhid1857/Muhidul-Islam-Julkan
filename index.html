@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhidul Islam Julkan - Academic Portfolio</title>
+<style>
+  :root {
+    --bg-color: #ffffff;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --accent: #1e3a8a;
+    --border: #e2e8f0;
+    --card-bg: #f8fafc;
+  }
+  * { box-sizing: border-box; scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--bg-color);
+    padding: 20px;
+  }
+  
+  /* Top Header & Navigation */
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .brand-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-decoration: none;
+  }
+  .nav-links {
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+    font-weight: 600;
+    flex-wrap: wrap;
+  }
+  .nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--accent); }
+
+  /* Hero Section */
+  .hero {
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .hero-content { flex: 1; min-width: 250px; }
+  .hero h1 {
+    font-size: 30px;
+    margin: 0 0 8px 0;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+  .hero p.tagline {
+    font-size: 15px;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .hero p.bio {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0;
+  }
+  
+  /* Profile Photo Box */
+  .profile-pic-box {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #e2e8f0;
+    overflow: hidden;
+    border: 2px solid var(--border);
+    flex-shrink: 0;
+  }
+  .profile-pic-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Sections */
+  section { margin-bottom: 45px; }
+  h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--text-primary);
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .item-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 16px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+  .item-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 4px 0;
+  }
+  .item-meta {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .item-desc {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin: 0 0 10px 0;
+  }
+
+  .media-action-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border);
+    font-size: 12px;
+  }
+  .media-btn {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    padding: 4px 10px;
+    border-radius: 4px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .media-btn:hover { background: #f1f5f9; }
+
+  .skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .tag {
+    background: #f1f5f9;
+    border: 1px solid var(--border);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <a href="#" class="brand-name">Muhidul Islam Julkan</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#publications">Publications</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#awards">Awards</a>
+      <a href="#repository">Dossier</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="hero-content">
+      <h1>Muhidul Islam Julkan</h1>
+      <p class="tagline">LL.M. Scholar & Public International Law Researcher</p>
+      <p class="bio">
+        Law graduate from Southern University Bangladesh and postgraduate legal scholar at the Bangladesh University of Professionals (BUP). Research focuses on Public International Law, International Humanitarian Law (IHL), UNCLOS, and Constitutional Reform. Former President of the Southern University Bangladesh Moot Court Society (SUBMCS).
+      </p>
+    </div>
+    <!-- Profile Picture Box -->
+    <div class="profile-pic-box">
+      <img src="https://via.placeholder.com/150" alt="Profile Photo">
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications">
+    <h2>Selected Publications & Research</h2>
+    
+    <div class="item-card">
+      <div class="item-title">Deadlock and Destruction: Gaza’s Humanitarian Catastrophe, UNSC Veto Paralysis, and IHL</div>
+      <div class="item-meta">IIUM Journal of Religion and Civilisational Studies (IJRCS), Vol. 9(2), 2026 (Co-authored with Dr. Mohammad Nurunnabi)</div>
+      <p class="item-desc">Comprehensive institutional and legal analysis of humanitarian law frameworks in contemporary conflict.</p>
+      <div class="media-action-box">
+        <span>📄 Paper Proof:</span>
+        <a href="#" target="_blank" class="media-btn">View Publication PDF</a>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-title">Autonomous Weapons and the Law of Armed Conflict: Revisiting IHL in the Age of AI</div>
+      <div class="item-meta">Journal of General Education (JGED), Vol. 5(1), 2025 | DOI: 10.5281/zenodo.18199446</div>
+      <p class="item-desc">Explores accountability, legal compliance, and emerging challenges of AI warfare systems.</p>
+      <div class="media-action-box">
+        <span>🔗 Repository:</span>
+        <a href="https://doi.org/10.5281/zenodo.18199446" target="_blank" class="media-btn">Open Zenodo Record</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Section -->
+  <section id="leadership">
+    <h2>Leadership & Experience</h2>
+    <div class="item-card">
+      <div class="item-title">President — Southern University Bangladesh Moot Court Society (SUBMCS)</div>
+      <div class="item-meta">Nov 2024 – Jan 2026</div>
+      <p class="item-desc">Directed academic and administrative operations, coordinated national and international moot court training (including Philip C. Jessup), and established specialized governance wings.</p>
+      <div class="media-action-box">
+        <span>🖼️ Work Proof / Image:</span>
+        <a href="#" target="_blank" class="media-btn">View Appointment / Photos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards Section -->
+  <section id="awards">
+    <h2>Honours & Awards</h2>
+    <div class="item-card">
+      <div class="item-title">Best Research Paper Award (1st Position)</div>
+      <div class="item-meta">SCLS National Law Olympiad 2025 (Season V), University of Chittagong</div>
+      <p class="item-desc">Awarded for the paper titled "Legal Personhood for Environmental Entities" among participants from 35 universities.</p>
+      <div class="media-action-box">
+        <span>🏆 Award Certificate:</span>
+        <a href="#" target="_blank" class="media-btn">View Certificate PDF</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Repository / Document Proofs Section -->
+  <section id="repository">
+    <h2>Scholarship Dossier & Documents</h2>
+    <div class="item-card">
+      <div class="item-title">Verification Documents Portal</div>
+      <p class="item-desc">Direct access to complete verified credentials for scholarship committee evaluation.</p>
+      <div class="media-action-box" style="border-top: none; padding-top: 0;">
+        <a href="#" target="_blank" class="media-btn" style="background: var(--accent); color: white;">📥 Download Full Academic CV (PDF)</a>
+        <a href="#" target="_blank" class="media-btn" style="background: var(--accent); color: white;">📁 View All Certificates Folder</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section>
+    <h2>Expertise & Skills</h2>
+    <div class="skills-tags">
+      <span class="tag">Public International Law</span>
+      <span class="tag">Constitutional Law</span>
+      <span class="tag">International Humanitarian Law</span>
+      <span class="tag">Legal Research & Methodology</span>
+      <span class="tag">Moot Court Advocacy</span>
+      <span class="tag">Policy Drafting</span>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="item-card">
+      <p class="item-desc">
+        <strong>Email:</strong> muhidulislamjulkan@gmail.com<br>
+        <strong>Phone:</strong> +880 1883580474<br>
+        <strong>Location:</strong> Chattogram, Bangladesh
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Muhidul Islam Julkan. Academic Portfolio Dossier.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
